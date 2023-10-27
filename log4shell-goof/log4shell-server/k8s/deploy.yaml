@@ -22,9 +22,9 @@ spec:
         app: log4shell
     spec:
       containers:
-        - name: ldap
-          image: ${DOCKER_ACCOUNT}/log4shell-server:latest
-          imagePullPolicy: Always
+      - image: ${DOCKER_ACCOUNT}/log4shell-server:latest
+        imagePullPolicy: Always
+        name: ldap
         securityContext:
           runAsNonRoot: true
           readOnlyRootFilesystem: true
