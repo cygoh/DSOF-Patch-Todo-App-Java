@@ -22,6 +22,11 @@ spec:
         name: java-goof
         securityContext:
           runAsNonRoot: true
+          readOnlyRootFilesystem: true
+          allowPrivilegeEscalation: false
+          capabilities:
+            drop:
+              - ALL
           runAsUser: 65534 #nobody
           runAsGroup: 65534 #nobody
       restartPolicy: Always
@@ -38,5 +43,7 @@ spec:
     - port: 80
       protocol: TCP
       targetPort: 8080
+  loadBalancerSourceRanges:
+    - 10.0.0.0/8
   selector:
     app: goof
