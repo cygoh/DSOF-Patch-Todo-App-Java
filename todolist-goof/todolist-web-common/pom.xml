@@ -48,18 +48,11 @@
             <version>7.0</version>
         </dependency>
 
-        <!--jstl-->
-        <dependency>
-            <groupId>javax.servlet</groupId>
-            <artifactId>jstl</artifactId>
-            <version>1.2</version>
-        </dependency>
-
         <!--hibernate validator-->
         <dependency>
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-validator</artifactId>
-            <version>4.3.1.Final</version>
+            <version>8.0.1.Final</version>
         </dependency>
 
         <!--vulnerable commons collections (deserialization) -->
