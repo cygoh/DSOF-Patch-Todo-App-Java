@@ -28,7 +28,7 @@ spec:
             capabilities:
               drop:
                 - ALL
-              livenessProbe:
+          livenessProbe:
             exec:
               command:
                 - cat
